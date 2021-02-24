@@ -1,7 +1,7 @@
 
 const range = (start, end, step) => {
   var rangeArray = [];
-  if (step < 0) return rangeArray; 
+  if ( step < 0 || start > end || start === undefined || end === undefined || step === undefined ) return rangeArray; 
   for ( var i = start; i <= end; i += step) {
     rangeArray.push(i);
   }
