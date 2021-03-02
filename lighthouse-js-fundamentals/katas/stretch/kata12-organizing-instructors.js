@@ -21,10 +21,10 @@ const organizeInstructors = function(instructors) {
       var v = instructors[i].name; 
       newArray.push(`${v}`);
       courseInstructors[k] = newArray;
+
     }
 
   }
-
   return courseInstructors;
 };
 
